@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Сodejam-Palette</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+	<header class="header">
+		<nav class="header__nav">
+			<img src="img/header/nav/nav_icon.svg" alt="" class="header__burger">
+		</nav>
+		<h1 class="header__title">Сodejam-Palette</h1>
+	</header>
+	<main class="main">
+		<article class="content">
+			<section class="tools-block">
+				<ul class="tools-block__tools">
+					<li class="tools-block__tools_item item_active" id="pencil">
+						<img src="img/main/controls/icon-pencil.svg" alt="" class="sheet__img">
+						<p class="sheet__name">Pencil</p>
+					</li>
+				</ul>
+				<ul class="tools-block__colors">
+					<li class="tools-block__colors_item">
+						<div class="color" id="current_color">
+							<input type="color" id="color_input" class="color_input"></div>
+						<p class="sheet__name">Current color</p>
+					</li>
+					<li class="tools-block__colors_item change">
+						<div class="color change_color" id="prev_color"></div>
+						<p class="sheet__name">Prev color</p>
+					</li>
+					<li class="tools-block__colors_item change" id="red-color">
+						<div class="color change_color"></div>
+						<p class="sheet__name">red</p>
+					</li>
+					<li class="tools-block__colors_item change" id="blue-color">
+						<div class="color change_color"></div>
+						<p class="sheet__name">blue</p>
+					</li>
+				</ul>
+			</section>
+			<section class="draw-panel">
+				<div class="draw-panel__buttons">
+					<button class="draw-panel__buttons_load" id="load">load</button>
+					<input type="search" class="search-city" id="search" value="Saratov">
+					<button class="draw-panel__buttons_load" id="grayscalebtn">B&W</button>
+				</div>
+				<canvas class="canvas" id="canvas"></canvas>
+				<div class="buttons-container">
+					<div class="buttons-scales">
+						<button class="button-scale button-4 button-scale__active" id='button-4'>128x128</button>
+						<button class="button-scale button-2" id='button-2'>256x256</button>
+						<button class="button-scale  button-1" id='button-1'>512x512</button>
+						<button class="clean cleanCanvas" id="cleanCanvas">Clean canvas</button>
+					</div>
+				</div>
+			</section>
+		</article>
+	</main>
+	<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
